@@ -5,6 +5,9 @@
     <url>/2020/04/19/Test/</url>
     <content><![CDATA[<p>测试一下博客</p>
 ]]></content>
+      <tags>
+        <tag>life</tag>
+      </tags>
   </entry>
   <entry>
     <title>Codeforces 1004D</title>
@@ -13,6 +16,14 @@
 <hr>
 <p>留坑</p>
 ]]></content>
+      <categories>
+        <category>ACM</category>
+        <category>codeforces</category>
+      </categories>
+      <tags>
+        <tag>构造</tag>
+        <tag>算法</tag>
+      </tags>
   </entry>
   <entry>
     <title>My first post</title>
