@@ -79,15 +79,15 @@
 
 
 
-<meta name="description" content="[x] codeforces1004D 大致算法： 构造题目难度： 2200题目连接： https:&#x2F;&#x2F;codeforces.com&#x2F;contest&#x2F;1004&#x2F;problem&#x2F;D题目描述： 给你t个数字，要你组成一个n x m的矩阵，这个矩阵满足这样的条件 ①矩阵里面的元素到“0”这个元素的曼哈顿距离为元素值大小。曼哈顿距离：两个点坐标差的绝对值之和。现在问你的是输出n，m以及元素“0”的坐标(">
+<meta name="description" content="codeforces1004D 大致算法： 构造题目难度： 2200题目连接： https:&#x2F;&#x2F;codeforces.com&#x2F;contest&#x2F;1004&#x2F;problem&#x2F;D题目描述： 给你t个数字，要你组成一个n x m的矩阵，这个矩阵满足这样的条件 ①矩阵里面的元素到“0”这个元素的曼哈顿距离为元素值大小。曼哈顿距离：两个点坐标差的绝对值之和。现在问你的是输出n，m以及元素“0”的坐标(x,y)">
 <meta property="og:type" content="article">
 <meta property="og:title" content="做题记录">
 <meta property="og:url" content="https://sarahwang0220.github.io/2020/04/26/%E5%81%9A%E9%A2%98%E8%AE%B0%E5%BD%95/index.html">
 <meta property="og:site_name" content="人云">
-<meta property="og:description" content="[x] codeforces1004D 大致算法： 构造题目难度： 2200题目连接： https:&#x2F;&#x2F;codeforces.com&#x2F;contest&#x2F;1004&#x2F;problem&#x2F;D题目描述： 给你t个数字，要你组成一个n x m的矩阵，这个矩阵满足这样的条件 ①矩阵里面的元素到“0”这个元素的曼哈顿距离为元素值大小。曼哈顿距离：两个点坐标差的绝对值之和。现在问你的是输出n，m以及元素“0”的坐标(">
+<meta property="og:description" content="codeforces1004D 大致算法： 构造题目难度： 2200题目连接： https:&#x2F;&#x2F;codeforces.com&#x2F;contest&#x2F;1004&#x2F;problem&#x2F;D题目描述： 给你t个数字，要你组成一个n x m的矩阵，这个矩阵满足这样的条件 ①矩阵里面的元素到“0”这个元素的曼哈顿距离为元素值大小。曼哈顿距离：两个点坐标差的绝对值之和。现在问你的是输出n，m以及元素“0”的坐标(x,y)">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-04-26T08:20:26.139Z">
-<meta property="article:modified_time" content="2020-04-26T08:44:34.887Z">
+<meta property="article:modified_time" content="2020-04-26T08:48:32.835Z">
 <meta property="article:author" content="Yehui Wang">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -403,9 +403,11 @@
 
       
         <ul>
-<li>[x] <strong>codeforces1004D</strong><blockquote>
-<p>大致算法： 构造<br>题目难度： 2200<br>题目连接： <a href="https://codeforces.com/contest/1004/problem/D" target="_blank" rel="noopener">https://codeforces.com/contest/1004/problem/D</a><br>题目描述： 给你t个数字，要你组成一个n x m的矩阵，这个矩阵满足这样的条件 ①矩阵里面的元素到“0”这个元素的曼哈顿距离为元素值大小。曼哈顿距离：两个点坐标差的绝对值之和。现在问你的是输出n，m以及元素“0”的坐标(x,y);如果不存在这样的矩阵，输出“-1”。<br> 考虑对称性，故假设0点的(x,y)的x是最小的<br> 假设到左上角和右下角的曼哈顿距离是a和b，则满足如下条件</p>
-<script type="math/tex; mode=display">lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n</script><script type="math/tex; mode=display">
+<li><strong>codeforces1004D</strong><blockquote>
+<p>大致算法： 构造<br>题目难度： 2200<br>题目连接： <a href="https://codeforces.com/contest/1004/problem/D" target="_blank" rel="noopener">https://codeforces.com/contest/1004/problem/D</a><br>题目描述： 给你t个数字，要你组成一个n x m的矩阵，这个矩阵满足这样的条件 ①矩阵里面的元素到“0”这个元素的曼哈顿距离为元素值大小。曼哈顿距离：两个点坐标差的绝对值之和。现在问你的是输出n，m以及元素“0”的坐标(x,y);如果不存在这样的矩阵，输出“-1”。<br> 考虑对称性，故假设0点的(x,y)的x是最小的</p>
+<a id="more"></a>
+<p> 假设到左上角和右下角的曼哈顿距离是a和b，则满足如下条件</p>
+<script type="math/tex; mode=display">
  \begin{cases}
  a + b = n + m - 2 \\
  x + y = a + b + 2 \\
@@ -416,13 +418,13 @@
 </ul>
 <hr>
 <ul>
-<li>[x] <strong>codeforces1004E</strong><blockquote>
+<li><strong>codeforces1004E</strong><blockquote>
 <p>大致算法： RMQ + 树的直径<br>题目难度： 2400<br>题目链接： <a href="https://codeforces.com/problemset/problem/1004/E" target="_blank" rel="noopener">https://codeforces.com/problemset/problem/1004/E</a></p>
 </blockquote>
 </li>
 </ul>
 <hr>
-<p>留坑</p>
+<p>更新ing</p>
 
       
     </div>
