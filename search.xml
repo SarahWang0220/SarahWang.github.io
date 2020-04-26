@@ -15,7 +15,7 @@
     <content><![CDATA[<ul>
 <li>[x] <strong>codeforces1004D</strong><blockquote>
 <p>大致算法： 构造<br>题目难度： 2200<br>题目连接： <a href="https://codeforces.com/contest/1004/problem/D" target="_blank" rel="noopener">https://codeforces.com/contest/1004/problem/D</a><br>题目描述： 给你t个数字，要你组成一个n x m的矩阵，这个矩阵满足这样的条件 ①矩阵里面的元素到“0”这个元素的曼哈顿距离为元素值大小。曼哈顿距离：两个点坐标差的绝对值之和。现在问你的是输出n，m以及元素“0”的坐标(x,y);如果不存在这样的矩阵，输出“-1”。<br> 考虑对称性，故假设0点的(x,y)的x是最小的<br> 假设到左上角和右下角的曼哈顿距离是a和b，则满足如下条件</p>
-<script type="math/tex; mode=display">
+<script type="math/tex; mode=display">lim_{1\to+\infty}P(|\frac{1}{n}\sum_i^nX_i-\mu|<\epsilon)=1, i=1,...,n</script><script type="math/tex; mode=display">
  \begin{cases}
  a + b = n + m - 2 \\
  x + y = a + b + 2 \\
